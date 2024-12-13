@@ -1,0 +1,51 @@
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background.png");
+  background-size: cover;
+  background-position: top;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: #fafafa;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transition: 0.5s;
+  border-radius: 1rem;
+  filter: blur(10px);
+}
+
+.btn:hover::before {
+  color: #fafafa;
+  background-color: #000;
+}
