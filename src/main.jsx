@@ -7,11 +7,10 @@ import About from "./pages/About.jsx";
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 
-const BASENAME = "/portfolio-oficial"; 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename={BASENAME}>
+    <BrowserRouter basename="/portfolio-oficial">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
