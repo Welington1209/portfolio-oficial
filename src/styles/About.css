@@ -58,20 +58,65 @@
   align-items: center;
   flex-direction: row;
   display: flex;
+  gap: 1rem;
+  position: relative;
 }
 
 .skills-container li {
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   position: relative;
   cursor: pointer;
   font-size: 1.5rem;
   color: #fafafa;
   transition: 0.4s;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2rem;
 }
 
-.skills-container li:hover {
+.skills-container li div {
+  text-align: center;
+}
+
+.skills-container .Sass {
+  height: 28vh;
+  font-size: 1.1rem;
+}
+
+.skills-container .Tailwind {
+  height: 32vh;
+}
+
+.skills-container .Sass div {
   scale: 1.1;
+}
+
+.skills-container .GitHub {
+  height: 36vh;
+}
+
+.skills-container .GitHub div {
+  scale: 1.2;
+}
+
+.skills-container .React {
+  height: 40vh;
+}
+
+.skills-container .React div {
+  scale: 1.3;
+}
+
+.skills-container .JavaScript {
+  height: 44vh;
+}
+
+.skills-container .JavaScript div {
+  scale: 1.4;
 }
 
 .skills-container li::before {
@@ -79,12 +124,23 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  border-radius: 0.5rem;
   top: 0;
   left: 0;
   opacity: 0.8;
   filter: blur(5px);
   background-color: #000;
   z-index: -1;
+  transition: 0.5s;
+}
+
+.skills-container li:hover {
+  color: #000;
+}
+
+.skills-container li:hover:before {
+  background-color: #fafafa;
+  opacity: 0.5;
 }
 
 @media (max-width: 450px) {
@@ -93,7 +149,6 @@
     padding: 0.5rem;
     justify-content: space-between;
     flex-direction: column;
-    
   }
   .paragraph-container {
     flex-direction: column;
@@ -114,7 +169,7 @@
   }
 
   .skills-container li {
-    min-width: 40%;
+    min-width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;

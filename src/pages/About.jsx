@@ -10,6 +10,35 @@ import { DiSass, DiJsBadge } from "react-icons/di";
 import { FaCss3 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+const skillsData = [
+  {
+    icon: <DiSass size={40} color="#CC6699" />,
+    title: "Sass",
+    text: "Conhecimento na utilização do pré-processador Sass para estilização e organizada e limpa.",
+  },
+  {
+    icon: <FaCss3 size={40} color="#38BDF8" />,
+    title: "Tailwind",
+    text: "Experiência no uso de Tailwind para criar layouts responsivos e modernos de forma eficiente.",
+  },
+  {
+    icon: <FaGithub size={40} color="#171515" />,
+    title: "GitHub",
+    text: "Conhecimento no uso do GitHub para controle de versão e colaboração em projetos.",
+  },
+  {
+    icon: <FaReact size={40} color="#61DBFB" />,
+    title: "React",
+    text: "Conhecimento no desenvolvimento de interfaces dinâmicas e reutilizáveis utilizando React.",
+  },
+
+  {
+    icon: <DiJsBadge size={40} color="#F7DF1E" />,
+    title: "JavaScript",
+    text: "Habilidade em criar funcionalidades dinâmicas e interativas com JavaScript.",
+  },
+];
+
 const About = () => {
   return (
     <section id="about">
@@ -40,24 +69,18 @@ const About = () => {
         </div>
 
         <div className="skills">
-          <h2 className="title-description">Minhas principais tecnologias</h2>
+          <h2 className="title-description">Habilidades</h2>
 
           <ul className="skills-container">
-            <li>
-              <DiJsBadge size={40} color="#F7DF1E" />
-            </li>
-            <li>
-              <FaReact size={40} color="#61DBFB" />
-            </li>
-            <li>
-              <FaCss3 size={40} color="#38B2AC" />
-            </li>
-            <li>
-              <DiSass size={40} color="#CC6699" />
-            </li>
-            <li>
-              <FaGithub size={40} color="#fafafa" />
-            </li>
+            {skillsData.map((skill, index) => (
+              <li className={skill.title} key={index}>
+                <h3>{skill.title}</h3>
+
+                <div>{skill.icon}</div>
+
+                <p>{skill.text}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
