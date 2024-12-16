@@ -92,6 +92,8 @@
     overflow: auto;
     padding: 0.5rem;
     justify-content: space-between;
+    flex-direction: column;
+    
   }
   .paragraph-container {
     flex-direction: column;
@@ -99,6 +101,7 @@
 
   .text-description {
     width: 100%;
+    text-align: justify;
   }
 
   .text-description:first-child {
