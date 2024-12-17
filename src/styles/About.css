@@ -99,6 +99,10 @@
   height: 36vh;
 }
 
+.skills-container .GitHub div:hover {
+  color: #000;
+}
+
 .skills-container .GitHub div {
   scale: 1.2;
 }

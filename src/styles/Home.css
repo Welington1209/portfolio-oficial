@@ -58,7 +58,7 @@
   border-radius: 20px;
 }
 
-img {
+.image-container img {
   opacity: 0.5;
   width: 400px;
   height: 400px;

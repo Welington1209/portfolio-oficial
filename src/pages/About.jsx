@@ -22,7 +22,7 @@ const skillsData = [
     text: "Experiência no uso de Tailwind para criar layouts responsivos e modernos de forma eficiente.",
   },
   {
-    icon: <FaGithub size={40} color="#171515" />,
+    icon: <FaGithub size={40}  />,
     title: "GitHub",
     text: "Conhecimento no uso do GitHub para controle de versão e colaboração em projetos.",
   },
