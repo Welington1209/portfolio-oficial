@@ -51,7 +51,7 @@ const Projects = () => {
         <div className="project">
           <h4>Imc Calculator</h4>
 
-          <div>
+          <div className="imc">
             <img src={ImcCalcHome} alt="" />
             <img src={ImcCalcResult} alt="" />
           </div>
@@ -123,7 +123,7 @@ const Projects = () => {
         <div className="project">
           <h4>PicPay Clone</h4>
 
-          <div>
+          <div className="picpay">
             <img src={PicPayHome} alt="" />
             <img src={PicPayWallet} alt="" />
           </div>

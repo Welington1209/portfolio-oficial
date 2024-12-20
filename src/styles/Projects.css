@@ -79,4 +79,12 @@
   .project img {
     width: 100%;
   }
+
+  .imc, .picpay {
+    display: flex;
+  }
+
+  .imc img, .picpay img {
+    height: 250px;
+  }
 }
