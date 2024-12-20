@@ -28,7 +28,7 @@
   background-color: #000;
 }
 
-.project:hover p,
+/* .project:hover p, */
 .project:hover h4 {
   color: #fafafa;
   transition: 0.5s;
@@ -65,6 +65,12 @@
   color: #000;
 }
 @media (max-width: 450px) {
+  #projects {
+    overflow: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
   .projects-container {
     flex-direction: column;
     display: flex;
