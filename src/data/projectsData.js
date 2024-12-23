@@ -50,7 +50,7 @@ export const projectsData = [
     img: GitHubFinder,
     description:
       "É uma ferramenta que permite buscar e explorar perfis de usuários no GitHub. Ao inserir um nome de usuário, o sistema exibe informações detalhadas, como o perfil do usuário, seus principais repositórios, seguidores, e estatísticas de atividade. A aplicação oferece uma interface simples e rápida, facilitando a navegação e o acesso ao conteúdo de outros desenvolvedores.",
-    link: "https://welington1209.github.io/dev_quiz/",
+    link: "https://welington1209.github.io/GitHub_Finder/",
   },
   {
     title: "PicPay Clone",
