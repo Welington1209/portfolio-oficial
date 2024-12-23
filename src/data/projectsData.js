@@ -2,7 +2,7 @@ import HackathonPorject from "../img/home-ods.png";
 import ImcCalcHome from "../img/home-imc.jpeg";
 import ImcCalcResult from "../img/result-imc.jpeg";
 import PortfolioCPDI from "../img/gif.gif";
-import SaudeProject from "../img/+saude.png";
+import SaudeProject from "../img/saude.png";
 import PicPayHome from "../img/picpay-home.jpeg";
 import PicPayWallet from "../img/picpay-wallet.jpeg";
 import DevQuiz from "../img/dev-quiz.png";
