@@ -35,7 +35,7 @@ export const projectsData = [
     title: "Movies Lib",
     img: MoviesLib,
     description:
-      "Desenvolvido durante o curso Formação Front-end, esta biblioteca de filmes utiliza a API do TMDB para oferecer uma experiência interativa. Funcionalidades principais: Categorias: Filmes mais populares, melhores avaliados e futuros lançamentos. Busca Avançada: Pesquise qualquer filme e acesse detalhes como sinopse, data de lançamento, duração, custo de produção e elenco. Detalhamento Completo: Cada filme possui uma página dedicada com informações detalhadas, organizadas de forma intuitiva.",
+      "Desenvolvido no curso Formação Front-end, esta biblioteca de filmes usa a API do TMDB para uma experiência interativa. Oferece categorias como populares, melhores avaliados e futuros lançamentos, além de busca avançada com detalhes como sinopse, data de lançamento, duração, custo e elenco. Cada filme tem uma página dedicada com informações organizadas.",
     link: "https://movies-lib-rho.vercel.app/",
   },
   {

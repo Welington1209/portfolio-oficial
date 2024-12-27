@@ -7,6 +7,12 @@ import { projectsData } from "../data/projectsData";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
+  const [visibleProjectId, setVisibleProjectId] = useState(null);
+
+  const handleProjects = (id) => {
+    setVisibleProjectId(visibleProjectId === id ? null : id);
+  };
+
   const handleDownload = (name) => {
     if (name === "picpay") {
       window.location.href = "/portfolio-oficial/app.apk";
@@ -17,9 +23,21 @@ const Projects = () => {
 
   return (
     <section id="projects">
+      {visibleProjectId === null && (
+        <>
+          <h3 className="title">Galeria de Projetos</h3>
+          <p className="subtitle">
+            Clique na imagem do projeto escolhido para exibir mais informaçõoes sobre ele
+          </p>
+        </>
+      )}
       <div className="projects-container">
         {projectsData.map((project, index) => (
-          <div key={index} className="project">
+          <div
+            onClick={() => handleProjects(index)}
+            key={index}
+            className="project"
+          >
             <h4>{project.title}</h4>
 
             {Array.isArray(project.img) ? (
@@ -32,8 +50,7 @@ const Projects = () => {
               <img src={project.img} alt={project.title} />
             )}
 
-            <p>{project.description}</p>
-
+            {visibleProjectId === index ? <p>{project.description} </p> : ""}
             {project.link ? (
               <Link className="link-btn" target="_blank" to={project.link}>
                 Visitar Site
