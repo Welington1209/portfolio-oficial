@@ -1,3 +1,11 @@
+.container {
+  display: flex;
+}
+
+.btn {
+  z-index: 2;
+}
+
 #projects {
   display: flex;
   justify-content: center;
@@ -98,6 +106,7 @@
   #projects {
     justify-content: space-between;
     flex-direction: column;
+    overflow: auto;
   }
   .projects-container {
     flex-direction: column;
