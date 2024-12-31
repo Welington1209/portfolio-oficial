@@ -30,6 +30,22 @@
   color: transparent;
 }
 
+.subtitle-container {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  animation: revealImage 2s ease 8s forwards;
+  opacity: 0;
+  height: 80px;
+  width: 100px;
+  /* transform: rotate(90deg); */
+  transform: rotateX(180deg);
+  top: 120%;
+  left: 70%;
+}
+
 .about-link {
   padding: 5px;
   border-radius: 25%;
@@ -94,16 +110,15 @@
     margin-bottom: 200px;
   }
   h2 {
-    font-size: 20px;
-    max-width: 80%;
     margin: auto;
+    line-height: 4rem;
   }
   h1 {
     font-size: 30px;
   }
   .image-container {
-    width: 200px;
-    height: 200px;
+    width: 290px;
+    height: 300px;
   }
   img {
     width: 200px;

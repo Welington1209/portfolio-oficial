@@ -14,7 +14,7 @@ export const projectsData = [
     title: "Espaço ODS",
     img: HackathonPorject,
     description:
-      '"Site vencedor do hackathon CPDI, focado nos ODS 2 (Fome Zero) e 6 (Água Potável e Saneamento). Apresenta um quiz interativo que desafia os usuários a testarem seus conhecimentos de forma dinâmica e educativa. Desenvolvido como uma SPA, utiliza Context API para gerenciar estados e garantir fluidez na navegação. O design é responsivo e intuitivo, promovendo acessibilidade e engajamento com os temas abordados."',
+      "Site vencedor do hackathon CPDI, focado nos ODS 2 (Fome Zero) e 6 (Água Potável e Saneamento). Apresenta um quiz interativo que desafia os usuários a testarem seus conhecimentos de forma dinâmica e educativa. Desenvolvido como uma SPA, utiliza Context API para gerenciar estados e garantir fluidez na navegação. O design é responsivo e intuitivo, promovendo acessibilidade e engajamento com os temas abordados.",
     link: "https://welington1209.github.io/Hackaton-CPDI-ODS/",
   },
   {

@@ -4,6 +4,7 @@ import TextTransition, { presets } from "react-text-transition";
 import "../styles/Home.css";
 import imageProfile from "../assets/imageProfile.jpeg";
 import { Link, Outlet } from "react-router-dom";
+import Arrow from "../assets/arrow.png";
 
 const Home = () => {
   const TEXTS = [
@@ -20,12 +21,12 @@ const Home = () => {
     setHasImage(true);
   };
 
-  setTimeout(image, 9000);
+  setTimeout(image, 7000);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % TEXTS.length);
-    }, 2500); // Troca de texto a cada 3 segundos
+    }, 2600); // Troca de texto a cada 3 segundos
 
     return () => clearInterval(intervalId); // Limpa o intervalo quando o componente desmonta
   }, []);
@@ -39,13 +40,17 @@ const Home = () => {
             </TextTransition>
           </h1>
 
-          <h2 className="home-subtitle">
-            Mas antes, deixa eu te contar um pouco{" "}
-            <Link to={"/about"} className="about-link">
-              sobre mim.
-            </Link>{" "}
-            😉
-          </h2>
+          <div className="subtitle-container">
+            <h2 className="home-subtitle">
+              Mas antes, deixa eu te contar um pouco{" "}
+              <Link to={"/about"} className="about-link">
+                sobre mim.
+              </Link>{" "}
+              😉
+            </h2>
+
+            <img className="arrow" src={Arrow} alt="" />
+          </div>
         </div>
 
         {hasImage && (
