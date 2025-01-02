@@ -25,8 +25,8 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   position: relative;
+  padding: 1rem;
   font-size: 1.2rem;
   font-size: 1.5rem;
   color: #fafafa;

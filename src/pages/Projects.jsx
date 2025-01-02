@@ -23,11 +23,11 @@ const Projects = () => {
   };
 
   return (
-    <div className="container">
+    <section id="projects">
       <Link className="btn" to={"/about"}>
         <FaArrowAltCircleLeft />
       </Link>
-      <section id="projects">
+      <div className="content">
         {visibleProjectId === null && (
           <>
             <h3 className="title">Galeria de Projetos</h3>
@@ -72,11 +72,11 @@ const Projects = () => {
             </div>
           ))}
         </div>
-      </section>
+      </div>
       <Link className="btn" to={"/contact"}>
         <FaArrowAltCircleRight />
       </Link>
-    </div>
+    </section>
   );
 };
 

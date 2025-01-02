@@ -40,9 +40,8 @@
   opacity: 0;
   height: 80px;
   width: 100px;
-  /* transform: rotate(90deg); */
   transform: rotateX(180deg);
-  top: 135%;
+  top: 200%;
   left: 85%;
 }
 
