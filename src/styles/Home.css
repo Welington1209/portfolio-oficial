@@ -42,8 +42,8 @@
   width: 100px;
   /* transform: rotate(90deg); */
   transform: rotateX(180deg);
-  top: 120%;
-  left: 70%;
+  top: 135%;
+  left: 85%;
 }
 
 .about-link {
@@ -52,6 +52,7 @@
   animation: revealText 2s ease 7s forwards;
   transition: 1s;
   border: 2px solid;
+  padding: 1rem;
   color: transparent;
   z-index: 2;
 }
@@ -103,16 +104,26 @@
 @media (max-width: 450px) {
   .home {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .home-title {
-    margin-bottom: 200px;
+    margin-bottom: 180px;
   }
-  h2 {
-    margin: auto;
+  .home-subtitle {
     line-height: 4rem;
+    width: 19rem;
+    text-align: center;
+    margin: auto;
   }
+
+  .arrow {
+    top: 110%;
+    left: 100px;
+    height: 3rem;
+    width: 4rem;
+  }
+
   h1 {
     font-size: 30px;
   }
