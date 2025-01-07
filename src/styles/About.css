@@ -86,15 +86,16 @@
 
 .level {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .level-container {
   background-color: #333;
   display: flex;
-  padding: .2rem;
-  border-radius: .2rem;
-  gap: .5rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -104,51 +105,7 @@
   width: 10px;
   padding: 0;
   border-radius: 1rem;
-
-
-  
 }
-/* 
-.skills-container .Sass {
-  height: 28vh;
-  font-size: 1.1rem;
-}
-
-.skills-container .Tailwind {
-  height: 32vh;
-}
-
-.skills-container .Sass div {
-  scale: 1.1;
-}
-
-.skills-container .GitHub {
-  height: 36vh;
-}
-
-.skills-container .GitHub div:hover {
-  color: #000;
-}
-
-.skills-container .GitHub div {
-  scale: 1.2;
-}
-
-.skills-container .React {
-  height: 40vh;
-}
-
-.skills-container .React div {
-  scale: 1.8;
-}
-
-.skills-container .JavaScript {
-  height: 44vh;
-}
-
-.skills-container .JavaScript div {
-  scale: 2;
-} */
 
 .skills-container > li::before {
   content: "";
@@ -199,10 +156,23 @@
     flex-wrap: wrap;
   }
 
-  .skills-container li {
+  .skills-container > li {
     min-width: 100%;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
+  }
+
+  .level {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .level-container {
+    gap: 1rem;
+  }
+
+  .level-container li {
+    width: 20px;
+    height: 20px;
   }
 }
