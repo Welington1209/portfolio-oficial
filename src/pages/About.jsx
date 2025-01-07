@@ -15,27 +15,32 @@ const skillsData = [
     icon: <DiSass size={40} color="#CC6699" />,
     title: "Sass",
     text: "Conhecimento na utilização do pré-processador Sass para estilização e organizada e limpa.",
+    level: "2",
   },
   {
     icon: <FaCss3 size={40} color="#38BDF8" />,
     title: "Tailwind",
     text: "Experiência no uso de Tailwind para criar layouts responsivos e modernos de forma eficiente.",
+    level: "4",
   },
   {
-    icon: <FaGithub size={40}  />,
+    icon: <FaGithub size={40} />,
     title: "GitHub",
     text: "Conhecimento no uso do GitHub para controle de versão e colaboração em projetos.",
+    level: "6",
   },
   {
     icon: <FaReact size={40} color="#61DBFB" />,
     title: "React",
-    text: "Conhecimento no desenvolvimento de interfaces dinâmicas e reutilizáveis utilizando React.",
+    text: "Criação de componentes reutilizáveis, gerenciamento de estado com hooks e integração com APIs, sempre seguindo boas práticas.",
+    level: "7",
   },
 
   {
     icon: <DiJsBadge size={40} color="#F7DF1E" />,
     title: "JavaScript",
     text: "Habilidade em criar funcionalidades dinâmicas e interativas com JavaScript.",
+    level: "7",
   },
 ];
 
@@ -74,11 +79,19 @@ const About = () => {
           <ul className="skills-container">
             {skillsData.map((skill, index) => (
               <li className={skill.title} key={index}>
-                <h3>{skill.title}</h3>
-
                 <div>{skill.icon}</div>
 
                 <p>{skill.text}</p>
+
+                <div className="level">
+                  <p>Nível:</p>
+
+                  <ul className="level-container">
+                    {Array.from({ length: skill.level }).map((_, index) => (
+                      <li key={index}></li>
+                    ))}
+                  </ul>
+                </div>
               </li>
             ))}
           </ul>
