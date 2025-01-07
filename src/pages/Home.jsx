@@ -5,6 +5,7 @@ import "../styles/Home.css";
 import imageProfile from "../assets/imageProfile.jpeg";
 import { Link, Outlet } from "react-router-dom";
 import Arrow from "../assets/arrow.png";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Home = () => {
   const TEXTS = [
@@ -31,36 +32,40 @@ const Home = () => {
     return () => clearInterval(intervalId); // Limpa o intervalo quando o componente desmonta
   }, []);
   return (
-    <>
-      <section className="home">
-        <div className="title-container">
-          <h1 className="home-title">
-            <TextTransition springConfig={presets.wobbly}>
-              {TEXTS[index % TEXTS.length]}
-            </TextTransition>
-          </h1>
+    <section className="home">
+      <Link className="btn none">
+        <FaArrowAltCircleRight />
+      </Link>
+      <div className="title-container">
+        <h1 className="home-title">
+          <TextTransition springConfig={presets.wobbly}>
+            {TEXTS[index % TEXTS.length]}
+          </TextTransition>
+        </h1>
 
-          <div className="subtitle-container">
-            <h2 className="home-subtitle">
-              Mas antes, deixa eu te contar um pouco{" "}
-              <Link to={"/about"} className="about-link">
-                sobre mim.
-              </Link>{" "}
-              😉
-            </h2>
+        <div className="subtitle-container">
+          <h2 className="home-subtitle">
+            Mas antes, deixa eu te contar um pouco{" "}
+            <Link to={"/about"} className="about-link">
+              sobre mim.
+            </Link>{" "}
+            😉
+          </h2>
 
-            <img className="arrow" src={Arrow} alt="" />
-          </div>
+          <img className="arrow" src={Arrow} alt="" />
         </div>
+      </div>
 
-        {hasImage && (
-          <div className="image-container">
-            <img src={imageProfile} alt="" />
-          </div>
-        )}
-      </section>
-      <Link>Voltar</Link>
-    </>
+      {hasImage && (
+        <div className="image-container">
+          <img src={imageProfile} alt="" />
+        </div>
+      )}
+
+      <Link to={"/about"} className="btn">
+        <FaArrowAltCircleRight />
+      </Link>
+    </section>
   );
 };
 

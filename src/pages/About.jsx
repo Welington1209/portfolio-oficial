@@ -27,7 +27,7 @@ const skillsData = [
     icon: <FaGithub size={40} />,
     title: "GitHub",
     text: "Conhecimento no uso do GitHub para controle de versão e colaboração em projetos.",
-    level: "6",
+    level: "5",
   },
   {
     icon: <FaReact size={40} color="#61DBFB" />,

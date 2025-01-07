@@ -49,3 +49,7 @@ body::before {
   color: #fafafa;
   background-color: #000;
 }
+
+.none {
+  opacity: 0;
+}

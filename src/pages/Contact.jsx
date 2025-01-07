@@ -78,7 +78,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Link className="btn" to={"/projects"}>
+      <Link className="btn none" to={"/projects"}>
         <FaArrowAltCircleLeft />
       </Link>
     </section>

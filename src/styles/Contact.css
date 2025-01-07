@@ -46,6 +46,7 @@
 .img-container img {
   width: 80%;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: rotate 1.5s;
 }
 
 .contacts {
@@ -75,11 +76,16 @@
   align-items: center;
   gap: 1rem;
   color: #fafafa;
-  
 }
 
 .contacts li:hover {
   background-color: #000;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 @media (max-width: 450px) {
@@ -100,7 +106,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: .4rem;
+    padding: 0.4rem;
     border: none;
   }
 
